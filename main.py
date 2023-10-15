@@ -6,7 +6,7 @@ import dlib
 import cv2
 
 mixer.init()
-mixer.music.load("alert_sound.mp3")
+mixer.music.load("C:/Users/sweth/Downloads/praveen/pythonProject/alert_sound.mp3")
 
 
 def eye_aspect_ratio(eye):
@@ -20,7 +20,7 @@ def eye_aspect_ratio(eye):
 thresh = 0.25
 frame_check = 20
 detect = dlib.get_frontal_face_detector()
-predict = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
+predict = dlib.shape_predictor("C:/Users/sweth/Downloads/praveen/pythonProject/shape_predictor_68_face_landmarks.dat")
 
 (lStart, lEnd) = face_utils.FACIAL_LANDMARKS_68_IDXS["left_eye"]
 (rStart, rEnd) = face_utils.FACIAL_LANDMARKS_68_IDXS["right_eye"]
